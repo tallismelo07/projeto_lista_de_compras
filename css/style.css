@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  /*Font*/
+  --font-family: "Inter", sans-serif;
+
+  /* Font title */
+  --font-title: 24px;
+  --font-title-line-height: 32px;
+  --font-title-weight: bold;
+  
+  /* Font label / paragraph */
+  --font-label-paragraph: 16px;
+  --font-label-paragraph-line-height: 20px;
+  --font-label-weight: 700;
+  --font-paragraph-weight: 500;
+  
+  /* Font link */
+  --font-link-line-height: 14px;
+  --font-label-paragraph-line-height: 16px;
+  --font-link-weight: 500;
+  
+
+
+  /* Background */
+  --background-primary: #F4F5FB;
+  --background-secondary: #FFFF;
+
+  /* Color */
+  --color-brand: #CA3884;
+  --color-brand-hover: #A52C6B;
+  --color-danger: #C93847;
+
+  /* Content */
+  --content-primary: #080B12;
+  --content-secondary: #374151;
+  --content-tertiary: #9CA3AF;
+  --always-white: #ffff;
+
+  /* Border */
+  --border-primary: #D1D5DB;
+  --border-hover: #B9C2D0;
+
+}
