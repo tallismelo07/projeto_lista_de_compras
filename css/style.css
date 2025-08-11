@@ -19,8 +19,6 @@
   --font-link-line-height: 14px;
   --font-label-paragraph-line-height: 16px;
   --font-link-weight: 500;
-  
-
 
   /* Background */
   --background-primary: #F4F5FB;
@@ -41,4 +39,8 @@
   --border-primary: #D1D5DB;
   --border-hover: #B9C2D0;
 
+}
+
+* {
+  font-family: var(--font-family);
 }
