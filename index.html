@@ -3,35 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Lista de Compras</title>
 </head>
 <body>
-    <header class="header_logo">
-      <img src="./assets/logo.png" alt="">
+    <header class="logo">
+      <img src="./assets/logo.png" alt="Logo QuickList">
     </header>
-    <main class="main_container">
-        <div>
-          <a href="#" class="toGoBack"> <- Voltar</a>
-          <h1 class="title_main">Compras da semana</h1>
-        </div>
-     
-        <form action="">
-          <input type="text" class="input_list" id="inputToList" placeholder="Adicione um novo item">
-          <button class="button" id="btn-toAdd">Adicionar item</button>
-        </form>
+    <div class="content">
+      <a href="#" class="link-button"> <- Voltar </a>
+      <h1 class="title">Compras da semana</h1>
+    </div>
+    
+    <main class="add-item">
+      <form action="">
+        <input type="text" id="input" class="add-item-input" placeholder="Adicione um novo item">
+        <button class="btn-add-item" id="btn">Adicionar item</button>
+      </form>
     </main>
-    <ul>
-      <li>
-        <input type="checkbox">
-        <span>Pao de forma</span>
-        <img src="./assets/Frame04.png" alt="Lixeira" onclick="remove()">
-      </li>
-    </ul>
-    <footer>
-      <img src="./assets/warning-circle-filled.png" alt="Circle filled">
-      <span>O item foi removido da lista</span>
-      <img src="./assets/delete-small.png" alt="Delete small" id="delete">
-    </footer>
+      <ul class="list">
+        <li class="items">
+          <label for="">
+            <input type="checkbox" class="checkbox" id="checkbox" checked>
+            <span> Pao de forma </span>
+          </label>
+            <img src="./assets/delete.svg" alt="delete" class="delete" id="deletar">
+        </li>
+      </ul>
+  
+    <section class="alert">
+        <img src="./assets/Icon.svg" alt="icon-alert">
+        <p class="alert-content">O item removido da lista</p>
+        <img src="./assets/delete-small.svg" alt="icon-delete">
+    </section>
 </body>
 </html>
