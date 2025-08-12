@@ -22,179 +22,222 @@
   --border-hover: #B9C2D0;
 }
 
-
 * {
-  box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  box-sizing: border-box;
   margin: 0;
 }
 
 body {
+  width: 100%;
   background-color: var(--background-primary);
 }
 
 .logo {
-  margin-top: 25px;
-  margin-bottom: 62px;
   display: flex;
   justify-content: center;
+  margin: 25px 0px 62px 0px;
 }
 
-.content {
-  margin-left: 369px;
+.img-logo {
+  width: 155.51px;
+  height: 40px;
+}
+
+.container {
+   margin-left: 369px;
+  }
+  
+  h1 {
+    margin-top: 16px;
   margin-bottom: 44px;
-}
-
-.link-button {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: medium;
-  color: var(--color-brand);
-  text-decoration: none;
-}
-
-.title {
-  margin-top: 16px;
   font-size: 24px;
-  font-weight: bold;
+  color: var(--content-primary);
+  font-weight: 700;
   line-height: 32px;
 }
 
-.add-item {
-  margin-left: 369px;
-  display: flex;
-  gap: 18px;
-  margin-bottom: 40px;
+a {
+  text-decoration: none;
+  color: var(--color-brand);
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
 }
 
-.add-item-input {
-  width: 451px;
-  height: 44px;
-  border: 2px solid var(--border-primary);
-  border-radius: 12px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px 18px;
-  gap: 8px;
-  
+a:hover {
+  color: var(--color-brand-hover);
+}
+
+.conteudo-principal {
+  margin-left: 369px;
 }
 
 form {
-  display: flex;
-  gap: 16px;
+  margin-bottom: 40px;
 }
 
-.add-item-input::placeholder {
-  color: var(--content-tertiary);
-  line-height: 100px;
-  font-weight: 400;
-  font-size: 16px;
-}
+.item {
+  margin-right: 16px;
+  padding: 0px 18px;
+  gap: 8px;
+  width: 451px;
+  height: 44px;
 
-.add-item-input.comTexto {
-  border-color: var(--content-tertiary);
-}
-
-.btn-add-item {
+  background: var(--background-secondary);
+  border: 2px solid var(--border-primary);
   border-radius: 12px;
-  border: none;
-  background-color: var(--color-brand);
+}
+
+.item::placeholder {
+  font-size: 16px;
+  line-height: 100%;
+  opacity: 75%;
+  font-weight: 400;
+}
+
+.button {
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
   width: 160px;
   height: 44px;
-  font-weight: 600;
+  background: var(--color-brand);
+  border-radius: 12px;
+  border: none;
+
   color: var(--always-white);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+
 }
 
-.list{
+.conteudo-principal {
+  margin-bottom: 36px;
+}
+
+.list {
   background-color: var(--background-secondary);
   width: 627px;
   height: 49px;
-  margin-left: 369px;
   border-radius: 12px;
-  text-align: center;
+  margin-bottom: 12px;
+}
+
+.list-item {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  border-radius: 12px;
- }
+  position: relative;
+  top: 15px;
+}
 
-.items{
-  display: flex;
-  gap: 12px;
-  margin-left: -24px;
+.label-list {
+  position: relative;
+  top: 15px;
 }
 
 span {
-  margin-left: 12px;
-  margin-right: 430px;
+  margin-left: -400px;
+  position: relative;
+  top: -1.5px;
+  color: var(--content-primary);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.delete {
+  margin-right: 20px;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  background: var(--background-secondary);
+  border: 1px solid  var(--border-primary);
+  border-radius: 6px;
 }
 
 
+.remocao {
+  margin-left: 369px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.alert {
-  margin-left: 675px;
-  margin-bottom: 137px;
+.remocao-item {
+  display: flex;
   background-color: var(--color-danger);
   width: 627px;
   height: 44px;
-  display: flex;
+  border-radius: 12px;
   justify-content: space-between;
   align-items: center;
-  border-radius: 12px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  margin-bottom: 30px;
 }
 
-.alert img {
-  margin-left: 16px;
-  margin-right: 16px;
+.icon {
+  margin-left: 10px;
 }
 
-.alert-content {
+.icon-apagar {
+  margin-right: 10px;
+}
+
+p {
+  margin-left: -330px;
   position: relative;
-  right: 170px;
-  font-size: 16px;
+  top: 1px;
   color: var(--always-white);
+  font-size: 16px;
   line-height: 20px;
+  font-weight: 500;
+}
+
+
+
+@media (max-width: 430px) {
+  body {
+    padding: 0 16px;
+  }
+
+  .container,
+  .conteudo-principal,
+  .remocao {
+    margin-left: 0;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .item {
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .list {
+    width: 100%;
+  }
+
+  span {
+    margin-left: 0;
+    position: static;
+  }
+
+  .remocao-item {
+    width: 100%;
+    padding: 0 8px;
+  }
+
+  p {
+    margin-left: 0;
+    position: static;
+    text-align: center;
+    flex: 1;
+  }
 }
